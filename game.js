@@ -26,8 +26,8 @@ let playAgainButton = document.querySelector("#again")
 //  * Finally, display an appropriate message in the resultTextElement to tell the user if they are right or wrong.          DONE
 //      For example "Correct! The capital of Germany is Berlin" or "Wrong - the capital of Germany is not G, it is Berlin"         DONE
 
-let url = '';
-let APIcountryNameResponse = '';
+let url = ''; // a variable that will contain a url
+let APIcountryNameResponse = ''; // a variable that will contain a response (country name)
 
 code();
 function code() {
@@ -76,11 +76,11 @@ function code() {
 // display the country's name, handle the user's guess. If you didn't use functions in the code you've 
 // already written, you should refactor your code to use functions to avoid writing very similar code twice.
 
-playAgainButton.addEventListener('click', function () {
-    url = '';
+playAgainButton.addEventListener('click', function () { // an event listener
+    url = ''; // set the values of these variable to empty
     APIcountryNameResponse = '';
     userAnswerElement.value = '';
-    resultTextElement.innerHTML = 'Result:';
-    code();
+    resultTextElement.innerHTML = 'Result:'; // value of the result ot this
+    code(); // call the function that contains all of the code above
 });
 
